@@ -15,7 +15,7 @@ export default function BookTable(){
     const tableRows = books.map(b =><BookRow key={b.id} {...b}/>)
 
     async function getBooks(){
-        const response = await fetch("http://0722-50-110-89-213.ngrok.io/books");
+        const response = await fetch("http://localhost:5000/books");
         const books: Book[] = await response.json()
         setBooks(books)
     }

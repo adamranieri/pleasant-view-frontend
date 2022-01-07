@@ -18,7 +18,7 @@ export default function BookRegistrationForm(){
             isCheckedout: false
         }
 
-        const response = await fetch('http://0722-50-110-89-213.ngrok.io/books', {
+        const response = await fetch('http://localhost:5000/books', {
             method:'POST',
             body:JSON.stringify(book), 
             headers:{
